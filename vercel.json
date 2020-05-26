@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "alias": ["my-anime-birthday.now.sh"],
+  "github": { "silent": true }
+}

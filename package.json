@@ -1,0 +1,61 @@
+{
+  "name": "my-birthday-anime",
+  "description": "Get anime and manga aired for the first time on your birthday",
+  "repository": "https://github.com/MarchWorks/my-anime-birthday.git",
+  "author": "marchworks",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint:prettier": "prettier --check --ignore-path .gitignore .",
+    "lint:js": "eslint --cache --ignore-path .gitignore \"**/*.js\"",
+    "lint": "npm-run-all lint:* -s",
+    "format:prettier": "prettier --write --ignore-path .gitignore .",
+    "format:js": "eslint --cache --ignore-path .gitignore --fix \"**/*.js\"",
+    "format": "npm-run-all format:* -s",
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@babel/node": "^7.8.7",
+    "@next/bundle-analyzer": "^9.4.2",
+    "@nzws/prettier-config": "~1",
+    "@yuzulabo/eslint-config": "~1",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-styled-components": "^1.10.7",
+    "cross-env": "^7.0.2",
+    "eslint": "~7.0.0",
+    "eslint-plugin-react": "^7.18.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.2.6",
+    "npm-run-all": "~4",
+    "prettier": "~2.0.5"
+  },
+  "dependencies": {
+    "next": "^9.4.2",
+    "next-dark-mode": "^2.2.4",
+    "nookies": "^2.3.0",
+    "polished": "^3.6.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
+    "react-intl": "^4.5.10",
+    "ress": "^2.0.4",
+    "styled-components": "^5.1.0",
+    "styled-media-query": "^2.1.2"
+  },
+  "prettier": "@nzws/prettier-config"
+}

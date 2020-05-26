@@ -1,2 +1,3 @@
-# my-anime-birthday
-Get anime aired for the first time in your birthday
+# My birthdate anime
+
+Get anime and manga aired for the first time on your birthdate
