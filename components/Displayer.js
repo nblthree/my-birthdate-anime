@@ -63,7 +63,8 @@ const Title = styled.div`
 const StartDate = styled.div`
   width: 100%;
   padding: 5px 0 5px 0;
-  color: ${({ theme: { text, lighten } }) => lighten(0.2, text)};
+  font-weight: 600;
+  color: ${({ theme: { text, darken } }) => darken(0.5, text)};
 `;
 
 const Displayer = ({ data }) => {
@@ -82,7 +83,7 @@ const Displayer = ({ data }) => {
             </ImageContainer>
             <Info>
               <Title>{value.title}</Title>
-              <StartDate>{value.start_date}</StartDate>
+              <StartDate>{value.start_date.split('T')[0]}</StartDate>
             </Info>
           </ListElement>
         ))}
@@ -98,7 +99,7 @@ const Displayer = ({ data }) => {
             </ImageContainer>
             <Info>
               <Title>{value.title}</Title>
-              <StartDate>{value.start_date}</StartDate>
+              <StartDate>{value.start_date.split('T')[0]}</StartDate>
             </Info>
           </ListElement>
         ))}
