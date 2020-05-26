@@ -147,7 +147,7 @@ const DateInput = ({ setData }) => {
               await Promise.all(
                 ['anime', 'manga'].map(type =>
                   fetch(
-                    `http://api.jikan.moe/v3/search/${type}?start_date=${date.y}-${date.m}-${date.d}&sort=asc&order_by=start_date`
+                    `https://api.jikan.moe/v3/search/${type}?start_date=${date.y}-${date.m}-${date.d}&sort=asc&order_by=start_date`
                   )
                     .then(resp => resp.json())
                     .then(res => res.results)
