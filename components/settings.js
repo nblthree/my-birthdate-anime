@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MessageSquare, Moon, Sun } from 'react-feather';
+import { MessageSquare, Moon, Sun, GitHub } from 'react-feather';
 import { useIntl } from 'react-intl';
 import { setCookie } from 'nookies';
 import { useDarkMode } from 'next-dark-mode';
@@ -16,7 +16,8 @@ const StyledSettings = styled.div`
     border: 1px solid ${({ theme: { text } }) => text};
   }
 
-  .theme {
+  .theme,
+  .github-profile {
     margin-left: 5px;
     margin-top: 2px;
     cursor: pointer;
@@ -74,6 +75,16 @@ const Settings = () => {
         ) : (
           <Sun className="icon" size={24} />
         )}
+      </div>
+
+      <div className="github-profile">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/MarchWorks"
+        >
+          <GitHub className="icon" size={24} />
+        </a>
       </div>
     </StyledSettings>
   );
