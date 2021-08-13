@@ -44,7 +44,7 @@
     "prettier": "~2.0.5"
   },
   "dependencies": {
-    "next": "^9.4.2",
+    "next": "^11.1.0",
     "next-dark-mode": "^2.2.4",
     "nookies": "^2.3.0",
     "polished": "^3.6.3",
