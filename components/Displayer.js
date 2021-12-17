@@ -76,7 +76,7 @@ const Displayer = ({ data }) => {
         <Type>
           <FormattedMessage id="anime" />
         </Type>
-        {animeList.slice(0, 5).map(value => (
+        {animeList?.slice(0, 5).map(value => (
           <ListElement key={value.mal_id}>
             <ImageContainer>
               <Img src={value.image_url} />
@@ -92,7 +92,7 @@ const Displayer = ({ data }) => {
         <Type>
           <FormattedMessage id="manga" />
         </Type>
-        {mangaList.slice(0, 5).map(value => (
+        {mangaList?.slice(0, 5).map(value => (
           <ListElement key={value.mal_id}>
             <ImageContainer>
               <Img src={value.image_url} />
