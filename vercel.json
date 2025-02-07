@@ -1,8 +1,5 @@
 {
   "version": 2,
   "alias": ["my-birthdate-anime.now.sh"],
-  "github": { "silent": true },
-  "env": {
-    "ga_tracking_id": "@ga_tracking_id"
-  }
+  "github": { "silent": true }
 }
