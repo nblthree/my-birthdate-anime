@@ -56,6 +56,5 @@
     "ress": "^2.0.4",
     "styled-components": "^5.1.0",
     "styled-media-query": "^2.1.2"
-  },
-  "prettier": "@nzws/prettier-config"
+  }
 }
